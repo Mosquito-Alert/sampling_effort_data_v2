@@ -1,0 +1,7 @@
+cff-version: 1.2.0
+message: "If you use this data, please cite it as below."
+type: dataset
+authors:
+- name: "Mosquito Alert"
+title: "Sampling Effort Data (v2)"
+url: "https://github.com/JohnPalmer/sampling_effort_data_v2"
