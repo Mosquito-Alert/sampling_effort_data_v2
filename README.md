@@ -21,7 +21,7 @@ participating.
 ## What is v2? Relationship to the original sampling effort dataset
 
 This is a revised version of the
-[Mosquito Alert sampling effort dataset](https://github.com/JohnPalmer/sampling_effort_data)
+[Mosquito Alert sampling effort dataset](https://github.com/Mosquito-Alert/sampling_effort_data)
 ([doi:10.5281/zenodo.5802476](https://doi.org/10.5281/zenodo.5802476)). In
 2026 we identified an error in the way the daily reporting-propensity model
 was estimated in the original (v1) pipeline: the risk sets used for the

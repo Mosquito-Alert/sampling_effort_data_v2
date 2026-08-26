@@ -4,4 +4,4 @@ type: dataset
 authors:
 - name: "Mosquito Alert"
 title: "Sampling Effort Data (v2)"
-url: "https://github.com/JohnPalmer/sampling_effort_data_v2"
+url: "https://github.com/Mosquito-Alert/sampling_effort_data_v2"
