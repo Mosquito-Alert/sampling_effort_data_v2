@@ -53,8 +53,6 @@ The repository contains the following files:
 
 * `sampling_effort_daily_cellres_025.csv.gz` - Daily participation and sampling effort in 0.025 degree sampling cells (v2 estimator).
 * `sampling_effort_daily_cellres_025_metadata.json` - Metadata for the 0.025 degree sampling cell data.
-* `sampling_effort_daily_cellres_05.csv.gz` - Daily participation and sampling effort in 0.05 degree sampling cells (v2 estimator).
-* `sampling_effort_daily_cellres_05_metadata.json` - Metadata for the 0.05 degree sampling cell data.
 * `CITATION.cff` - Shows how to cite this dataset.
 * `LICENSE` - License for this dataset (CC0).
 * `.gitignore` - Specifies which files are excluded from the git repository.
@@ -62,7 +60,7 @@ The repository contains the following files:
 
 ## Permanent Location
 
-All releases from this repository are also hosted on Zenodo.
+All releases from this repository are also hosted on Zenodo. The latest
+version can always be found through the concept DOI:
 
-<!-- TODO: add Zenodo DOI badge once the Zenodo-GitHub integration is enabled
-for this repository and the first release has been archived. -->
+[![DOI:10.5281/zenodo.22112557](https://zenodo.org/badge/DOI/10.5281/zenodo.22112557.svg)](https://doi.org/10.5281/zenodo.22112557)
