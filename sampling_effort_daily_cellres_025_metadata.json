@@ -6,5 +6,104 @@
   "name": "sampling_effort_daily_cellres_025_v2",
   "description": "Daily Mosquito Alert sampling effort per 0.025 degree cell, version 2. Differences from the v1 dataset: (1) reporting propensity comes from the corrected discrete-hazard estimator (v2), whose risk sets exclude participants who had already left the system; (2) SE_expected and SE are computed from participation-tenure BINS (boundaries in days: 1, 2, 4, 8, 16, 32, 181, 731) rather than exact tenures, a privacy-motivated design audited against trajectory-reconstruction attacks; (3) coverage starts in 2018, when the 0.025 degree sampling cells were introduced. Per-bin participant counts and per-bin propensities are not yet included in this release pending completion of the privacy review; when they are added, published SE values will not change, since they are already computed from the bins. Participant presence combines background tracks and report-location evidence exactly as in v1. Known upstream data-loss gaps: 19-26 July 2022 (21, 22 and 24 July entirely empty) and 18-19 April 2026; treat as missing, not zero.",
   "temporalCoverage": "2018/..",
-  "temporalCoverageGaps": ["2022-07-19/2022-07-26", "2026-04-18/2026-04-19"]
+  "temporalCoverageGaps": ["2022-07-19/2022-07-26", "2026-04-18/2026-04-19"],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "TigacellID",
+      "description": "Sampling cell id: SW-corner lon_lat"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "date",
+      "description": "Date (UTC)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "n_participants",
+      "description": "Participant presences in the cell that day (tracked participants plus reporting participants; the two identifier namespaces are unlinkable, so a person appearing through both channels counts twice, as in v1)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SE_expected",
+      "description": "Expected number of reporting participants: sum over participation-tenure bins of count times binned propensity"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SE",
+      "description": "Probability of at least one reporting participant: 1 - prod over tenure bins of (1-propensity)^count"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "masked_lon",
+      "description": "Cell SW corner longitude",
+      "unitText": "degrees"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "masked_lat",
+      "description": "Cell SW corner latitude",
+      "unitText": "degrees"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "n_reports_albopictus",
+      "description": "Validated reports (n_reports_*) or distinct reporting participants (n_reporters_*) per target and cell-day, as in v1: n_reports_albopictus"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "n_reports_bite",
+      "description": "Validated reports (n_reports_*) or distinct reporting participants (n_reporters_*) per target and cell-day, as in v1: n_reports_bite"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "n_reports_culex",
+      "description": "Validated reports (n_reports_*) or distinct reporting participants (n_reporters_*) per target and cell-day, as in v1: n_reports_culex"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "n_reports_japonicus",
+      "description": "Validated reports (n_reports_*) or distinct reporting participants (n_reporters_*) per target and cell-day, as in v1: n_reports_japonicus"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "n_reports_aegypti",
+      "description": "Validated reports (n_reports_*) or distinct reporting participants (n_reporters_*) per target and cell-day, as in v1: n_reports_aegypti"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "n_reports_koreicus",
+      "description": "Validated reports (n_reports_*) or distinct reporting participants (n_reporters_*) per target and cell-day, as in v1: n_reports_koreicus"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "n_reporters_albopictus",
+      "description": "Validated reports (n_reports_*) or distinct reporting participants (n_reporters_*) per target and cell-day, as in v1: n_reporters_albopictus"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "n_reporters_bite",
+      "description": "Validated reports (n_reports_*) or distinct reporting participants (n_reporters_*) per target and cell-day, as in v1: n_reporters_bite"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "n_reporters_culex",
+      "description": "Validated reports (n_reports_*) or distinct reporting participants (n_reporters_*) per target and cell-day, as in v1: n_reporters_culex"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "n_reporters_japonicus",
+      "description": "Validated reports (n_reports_*) or distinct reporting participants (n_reporters_*) per target and cell-day, as in v1: n_reporters_japonicus"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "n_reporters_aegypti",
+      "description": "Validated reports (n_reports_*) or distinct reporting participants (n_reporters_*) per target and cell-day, as in v1: n_reporters_aegypti"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "n_reporters_koreicus",
+      "description": "Validated reports (n_reports_*) or distinct reporting participants (n_reporters_*) per target and cell-day, as in v1: n_reporters_koreicus"
+    }
+  ]
 }
